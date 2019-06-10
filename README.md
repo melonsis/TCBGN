@@ -1,2 +1,2 @@
 # TCBGN
-A BGN-based secure multi-dimentional Scheme and implemention
+A BGN-based secure multi-dimensional Scheme and implemention
