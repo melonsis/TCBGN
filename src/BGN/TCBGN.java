@@ -139,7 +139,7 @@ public class TCBGN {
     }
 
 
-    public static void main(String[] args) {
+   public static void main(String[] args) {
         TCBGN b = new TCBGN();
         PublicKey BGNPK=b.gen(512);
         Field f=BGNPK.getField();

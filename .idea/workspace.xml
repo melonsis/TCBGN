@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d108c6e7-67d9-42e8-9292-dfb09002ef67" name="Default Changelist" comment="" />
+    <list default="true" id="d108c6e7-67d9-42e8-9292-dfb09002ef67" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BGN3/BGN/TCBGN.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BGN3/BGN/TCBGN.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BGN/TCBGN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BGN/TCBGN.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Matrix/MartrixFormingOri.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Matrix/MartrixFormingOri.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Matrix/MatrixFormingNew.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Matrix/MatrixFormingNew.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,14 +20,73 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BGN/TCBGN.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-609">
-              <caret line="105" column="5" lean-forward="true" selection-start-line="105" selection-start-column="5" selection-end-line="105" selection-end-column="5" />
+            <state relative-caret-position="76">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#gen#0;class#TCBGN#0" />
+                <element signature="method#Decrypt#0;class#TCBGN#0" />
+                <element signature="method#GGTadd#0;class#TCBGN#0" />
+                <element signature="method#GGTInit#0;class#TCBGN#0" />
+                <element signature="method#GGTmul#0;class#TCBGN#0" />
+                <element signature="method#GTOGT#0;class#TCBGN#0" />
+                <element signature="method#GGTDecrypt#0;class#TCBGN#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Matrix/MartrixFormingOri.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="931">
+              <caret line="123" column="5" selection-start-line="123" selection-start-column="5" selection-end-line="123" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#matrixForming#0;class#MartrixFormingOri#0" />
+                <element signature="method#matrix2Forming#0;class#MartrixFormingOri#0" />
+                <element signature="method#matrix3Forming#0;class#MartrixFormingOri#0" />
+                <element signature="method#yForming#0;class#MartrixFormingOri#0" />
+                <element signature="method#xpForming#0;class#MartrixFormingOri#0" />
+                <element signature="method#vectorEncrypt#0;class#MartrixFormingOri#0" />
+                <element signature="e#4888#4889#0" expanded="true" />
+                <element signature="e#4919#4920#0" expanded="true" />
+                <element signature="e#5008#5009#0" expanded="true" />
+                <element signature="e#5037#5038#0" expanded="true" />
+                <element signature="e#5064#5065#0" expanded="true" />
+                <element signature="e#5090#5091#0" expanded="true" />
+                <element signature="e#5131#5132#0" expanded="true" />
+                <element signature="e#5167#5168#0" expanded="true" />
+                <element signature="e#5202#5203#0" expanded="true" />
+                <element signature="e#5227#5228#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Matrix/MatrixFormingNew.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="812">
+              <caret line="160" column="9" selection-start-line="160" selection-start-column="9" selection-end-line="160" selection-end-column="9" />
+              <folding>
+                <element signature="e#574#575#0" expanded="true" />
+                <element signature="e#602#603#0" expanded="true" />
+                <element signature="method#matrixOrderCalc#0;class#MatrixFormingNew#0" />
+                <element signature="method#matrixFormingNew#0;class#MatrixFormingNew#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BGN3.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -49,16 +114,21 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/BGN/BGNPubKey.java" />
         <option value="$PROJECT_DIR$/src/BGN/PublicKey.java" />
         <option value="$PROJECT_DIR$/src/BGN/TCBGN.java" />
+        <option value="$PROJECT_DIR$/src/Matrix/MartrixFormingOri.java" />
+        <option value="$PROJECT_DIR$/src/Matrix/MatrixFormingNew.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="192" />
     <option name="y" value="101" />
     <option name="width" value="1400" />
@@ -69,6 +139,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -89,23 +160,32 @@
             </path>
             <path>
               <item name="BGN3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BGN3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Matrix" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BGN3" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../jinclude/jpbc/jpbc-plaf-2.0.0.jar!/" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -125,7 +205,33 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.MatrixFormingNew">
+    <configuration name="MartrixFormingOri" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Matrix.MartrixFormingOri" />
+      <module name="BGN3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Matrix.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MatrixFormingNew" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Matrix.MatrixFormingNew" />
+      <module name="BGN3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Matrix.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TCBGN" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BGN.TCBGN" />
       <module name="BGN3" />
@@ -141,6 +247,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MatrixFormingNew" />
+        <item itemvalue="Application.MartrixFormingOri" />
         <item itemvalue="Application.TCBGN" />
       </list>
     </recent_temporary>
@@ -160,16 +268,25 @@
       <workItem from="1559806378683" duration="801000" />
       <workItem from="1559807244560" duration="9125000" />
       <workItem from="1560150888730" duration="2564000" />
+      <workItem from="1560219743019" duration="1945000" />
+      <workItem from="1561369408705" duration="592000" />
+      <workItem from="1563959402850" duration="773000" />
+      <workItem from="1564387323186" duration="1631000" />
+      <workItem from="1565061275073" duration="1244000" />
+      <workItem from="1565332441942" duration="12060000" />
+      <workItem from="1565592805979" duration="11509000" />
+      <workItem from="1565604971411" duration="247000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27460000" />
+    <option name="totallyTimeSpent" value="57461000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26066098" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20415778" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -178,8 +295,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32936078" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3286334" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -188,7 +305,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32936078" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3286334" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -207,11 +324,51 @@
     <entry file="file://$PROJECT_DIR$/src/TCBGN.java" />
     <entry file="file://$PROJECT_DIR$/src/BGN/TCBGN.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-609">
-          <caret line="105" column="5" lean-forward="true" selection-start-line="105" selection-start-column="5" selection-end-line="105" selection-end-column="5" />
+        <state relative-caret-position="76">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#gen#0;class#TCBGN#0" />
+            <element signature="method#Decrypt#0;class#TCBGN#0" />
+            <element signature="method#GGTadd#0;class#TCBGN#0" />
+            <element signature="method#GGTInit#0;class#TCBGN#0" />
+            <element signature="method#GGTmul#0;class#TCBGN#0" />
+            <element signature="method#GTOGT#0;class#TCBGN#0" />
+            <element signature="method#GGTDecrypt#0;class#TCBGN#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Matrix/MartrixFormingOri.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="931">
+          <caret line="123" column="5" selection-start-line="123" selection-start-column="5" selection-end-line="123" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#matrixForming#0;class#MartrixFormingOri#0" />
+            <element signature="method#matrix2Forming#0;class#MartrixFormingOri#0" />
+            <element signature="method#matrix3Forming#0;class#MartrixFormingOri#0" />
+            <element signature="method#yForming#0;class#MartrixFormingOri#0" />
+            <element signature="method#xpForming#0;class#MartrixFormingOri#0" />
+            <element signature="method#vectorEncrypt#0;class#MartrixFormingOri#0" />
+            <element signature="e#4888#4889#0" expanded="true" />
+            <element signature="e#4919#4920#0" expanded="true" />
+            <element signature="e#5008#5009#0" expanded="true" />
+            <element signature="e#5037#5038#0" expanded="true" />
+            <element signature="e#5064#5065#0" expanded="true" />
+            <element signature="e#5090#5091#0" expanded="true" />
+            <element signature="e#5131#5132#0" expanded="true" />
+            <element signature="e#5167#5168#0" expanded="true" />
+            <element signature="e#5202#5203#0" expanded="true" />
+            <element signature="e#5227#5228#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BGN3.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -223,6 +380,19 @@
             <element signature="imports" expanded="true" />
             <element signature="e#703#704#0" expanded="true" />
             <element signature="e#751#752#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Matrix/MatrixFormingNew.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="812">
+          <caret line="160" column="9" selection-start-line="160" selection-start-column="9" selection-end-line="160" selection-end-column="9" />
+          <folding>
+            <element signature="e#574#575#0" expanded="true" />
+            <element signature="e#602#603#0" expanded="true" />
+            <element signature="method#matrixOrderCalc#0;class#MatrixFormingNew#0" />
+            <element signature="method#matrixFormingNew#0;class#MatrixFormingNew#0" />
           </folding>
         </state>
       </provider>
