@@ -126,6 +126,35 @@ public class MatrixFormingNew {
         }
         return prMatrices;
     }
+    public int[][] crMatrixForming(int[][] oriMatrix)
+    {
+        int[][] crMatrix = new int[oriMatrix.length][oriMatrix.length];
+        int i=0;
+        int j=0;
+        int crFlag=0;
+        for(i=0;i<oriMatrix.length;i++)
+        {
+            crFlag=0;
+            for (j=0;j<oriMatrix.length;j++)
+            {
+                if(oriMatrix[i][j]==1)
+                {
+                    crFlag+=1;
+                }
+            }
+            if (crFlag==oriMatrix.length)
+            {
+                for (j=0;j<oriMatrix.length;j++)
+                {
+                    if(oriMatrix[i][j]==1)
+                    {
+                        crMatrix[i][j]=1;
+                    }
+                }
+            }
+        }
+        return crMatrix;
+    }
     public static void main(String[] args){
         MatrixFormingNew MFNew=new MatrixFormingNew();
         int[] Btm=new int[10];
@@ -153,11 +182,20 @@ public class MatrixFormingNew {
         System.out.println("R1:");
         for(int[] a:prMatrices.get(1))
         {
-            for(int b:a)
-            {
-                System.out.print(b+" ");
+            for (int b : a) {
+                System.out.print(b + " ");
             }
             System.out.println();//换行
+        }
+            int[][] crMatrix =MFNew.crMatrixForming(matrix);
+            System.out.println("RC:");
+            for(int[] a:crMatrix)
+            {
+                for(int b:a)
+                {
+                    System.out.print(b+" ");
+                }
+                System.out.println();//换行
         }
     }
 }
