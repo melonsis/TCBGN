@@ -199,8 +199,8 @@ public static void main(String[] args){
         PublicKey BGNPK=bgn.gen(512);
         MartrixFormingOri RNG1 =new MartrixFormingOri();
         RNG1.Bottom=50;
-        RNG1.Top=79;
-        RNG1.maxNum=100;
+        RNG1.Top=60;
+        RNG1.maxNum=900;
         int i=0;
         double t1=System.currentTimeMillis();
         Vector<int[][]> matrices = RNG1.matrixForming(RNG1);

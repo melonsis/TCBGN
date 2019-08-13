@@ -4,6 +4,7 @@
     <list default="true" id="d108c6e7-67d9-42e8-9292-dfb09002ef67" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BGN3/Matrix/MatrixFormingNew.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BGN3/Matrix/MatrixFormingNew.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Matrix/MartrixFormingOri.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Matrix/MartrixFormingOri.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Matrix/MatrixFormingNew.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Matrix/MatrixFormingNew.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -21,17 +22,25 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BGN/TCBGN.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+            <state relative-caret-position="1254">
+              <caret line="66" column="17" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#gen#0;class#TCBGN#0" />
-                <element signature="method#Decrypt#0;class#TCBGN#0" />
-                <element signature="method#GGTadd#0;class#TCBGN#0" />
-                <element signature="method#GGTInit#0;class#TCBGN#0" />
-                <element signature="method#GGTmul#0;class#TCBGN#0" />
-                <element signature="method#GTOGT#0;class#TCBGN#0" />
                 <element signature="method#GGTDecrypt#0;class#TCBGN#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BGN/PublicKey.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#703#704#0" expanded="true" />
+                <element signature="e#751#752#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -40,16 +49,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Matrix/MartrixFormingOri.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="931">
-              <caret line="123" column="5" selection-start-line="123" selection-start-column="5" selection-end-line="123" selection-end-column="5" />
+            <state relative-caret-position="1950">
+              <caret line="201" column="18" selection-start-line="201" selection-start-column="18" selection-end-line="201" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#matrixForming#0;class#MartrixFormingOri#0" />
+                <element signature="method#matrix1Forming#0;class#MartrixFormingOri#0" />
                 <element signature="method#matrix2Forming#0;class#MartrixFormingOri#0" />
                 <element signature="method#matrix3Forming#0;class#MartrixFormingOri#0" />
                 <element signature="method#yForming#0;class#MartrixFormingOri#0" />
                 <element signature="method#xpForming#0;class#MartrixFormingOri#0" />
-                <element signature="method#vectorEncrypt#0;class#MartrixFormingOri#0" />
                 <element signature="e#4888#4889#0" expanded="true" />
                 <element signature="e#4919#4920#0" expanded="true" />
                 <element signature="e#5008#5009#0" expanded="true" />
@@ -68,14 +77,15 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Matrix/MatrixFormingNew.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3068">
-              <caret line="184" column="28" selection-start-line="184" selection-start-column="28" selection-end-line="184" selection-end-column="28" />
+            <state relative-caret-position="361">
+              <caret line="222" column="27" selection-start-line="222" selection-start-column="27" selection-end-line="222" selection-end-column="27" />
               <folding>
-                <element signature="e#574#575#0" expanded="true" />
-                <element signature="e#602#603#0" expanded="true" />
+                <element signature="imports" expanded="true" />
                 <element signature="method#matrixOrderCalc#0;class#MatrixFormingNew#0" />
                 <element signature="method#matrixFormingNew#0;class#MatrixFormingNew#0" />
-                <element signature="e#3970#4026#1" />
+                <element signature="method#crMatrixForming#0;class#MatrixFormingNew#0" />
+                <element signature="method#yVectorForming#0;class#MatrixFormingNew#0" />
+                <element signature="method#xpVectorForming#0;class#MatrixFormingNew#0" />
               </folding>
             </state>
           </provider>
@@ -124,7 +134,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -157,7 +167,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -233,8 +243,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.MatrixFormingNew" />
-        <item itemvalue="Application.MartrixFormingOri" />
         <item itemvalue="Application.TCBGN" />
+        <item itemvalue="Application.MartrixFormingOri" />
       </list>
     </recent_temporary>
   </component>
@@ -261,16 +271,18 @@
       <workItem from="1565332441942" duration="12060000" />
       <workItem from="1565592805979" duration="11509000" />
       <workItem from="1565604971411" duration="2038000" />
+      <workItem from="1565678294375" duration="8995000" />
+      <workItem from="1565696776766" duration="4629000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59252000" />
+    <option name="totallyTimeSpent" value="72876000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20415778" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20842217" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -306,53 +318,10 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/TCBGN.java" />
-    <entry file="file://$PROJECT_DIR$/src/BGN/TCBGN.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#gen#0;class#TCBGN#0" />
-            <element signature="method#Decrypt#0;class#TCBGN#0" />
-            <element signature="method#GGTadd#0;class#TCBGN#0" />
-            <element signature="method#GGTInit#0;class#TCBGN#0" />
-            <element signature="method#GGTmul#0;class#TCBGN#0" />
-            <element signature="method#GTOGT#0;class#TCBGN#0" />
-            <element signature="method#GGTDecrypt#0;class#TCBGN#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Matrix/MartrixFormingOri.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="931">
-          <caret line="123" column="5" selection-start-line="123" selection-start-column="5" selection-end-line="123" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#matrixForming#0;class#MartrixFormingOri#0" />
-            <element signature="method#matrix2Forming#0;class#MartrixFormingOri#0" />
-            <element signature="method#matrix3Forming#0;class#MartrixFormingOri#0" />
-            <element signature="method#yForming#0;class#MartrixFormingOri#0" />
-            <element signature="method#xpForming#0;class#MartrixFormingOri#0" />
-            <element signature="method#vectorEncrypt#0;class#MartrixFormingOri#0" />
-            <element signature="e#4888#4889#0" expanded="true" />
-            <element signature="e#4919#4920#0" expanded="true" />
-            <element signature="e#5008#5009#0" expanded="true" />
-            <element signature="e#5037#5038#0" expanded="true" />
-            <element signature="e#5064#5065#0" expanded="true" />
-            <element signature="e#5090#5091#0" expanded="true" />
-            <element signature="e#5131#5132#0" expanded="true" />
-            <element signature="e#5167#5168#0" expanded="true" />
-            <element signature="e#5202#5203#0" expanded="true" />
-            <element signature="e#5227#5228#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/BGN/PublicKey.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="57">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#703#704#0" expanded="true" />
@@ -368,16 +337,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/BGN/TCBGN.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1254">
+          <caret line="66" column="17" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#GGTDecrypt#0;class#TCBGN#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Matrix/MartrixFormingOri.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1950">
+          <caret line="201" column="18" selection-start-line="201" selection-start-column="18" selection-end-line="201" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#matrixForming#0;class#MartrixFormingOri#0" />
+            <element signature="method#matrix1Forming#0;class#MartrixFormingOri#0" />
+            <element signature="method#matrix2Forming#0;class#MartrixFormingOri#0" />
+            <element signature="method#matrix3Forming#0;class#MartrixFormingOri#0" />
+            <element signature="method#yForming#0;class#MartrixFormingOri#0" />
+            <element signature="method#xpForming#0;class#MartrixFormingOri#0" />
+            <element signature="e#4888#4889#0" expanded="true" />
+            <element signature="e#4919#4920#0" expanded="true" />
+            <element signature="e#5008#5009#0" expanded="true" />
+            <element signature="e#5037#5038#0" expanded="true" />
+            <element signature="e#5064#5065#0" expanded="true" />
+            <element signature="e#5090#5091#0" expanded="true" />
+            <element signature="e#5131#5132#0" expanded="true" />
+            <element signature="e#5167#5168#0" expanded="true" />
+            <element signature="e#5202#5203#0" expanded="true" />
+            <element signature="e#5227#5228#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Matrix/MatrixFormingNew.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3068">
-          <caret line="184" column="28" selection-start-line="184" selection-start-column="28" selection-end-line="184" selection-end-column="28" />
+        <state relative-caret-position="361">
+          <caret line="222" column="27" selection-start-line="222" selection-start-column="27" selection-end-line="222" selection-end-column="27" />
           <folding>
-            <element signature="e#574#575#0" expanded="true" />
-            <element signature="e#602#603#0" expanded="true" />
+            <element signature="imports" expanded="true" />
             <element signature="method#matrixOrderCalc#0;class#MatrixFormingNew#0" />
             <element signature="method#matrixFormingNew#0;class#MatrixFormingNew#0" />
-            <element signature="e#3970#4026#1" />
+            <element signature="method#crMatrixForming#0;class#MatrixFormingNew#0" />
+            <element signature="method#yVectorForming#0;class#MatrixFormingNew#0" />
+            <element signature="method#xpVectorForming#0;class#MatrixFormingNew#0" />
           </folding>
         </state>
       </provider>

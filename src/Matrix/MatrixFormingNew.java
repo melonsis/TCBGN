@@ -1,6 +1,11 @@
 package Matrix;
 
+import BGN.PublicKey;
+import BGN.TCBGN;
+
+import it.unisa.dia.gas.jpbc.Element;
 import java.util.Vector;
+import java.io.*;
 
 public class MatrixFormingNew {
     public int[] Bottom=new int[10];
@@ -94,16 +99,15 @@ public class MatrixFormingNew {
         }
         return matrix;
     }
-    public Vector prMatrixForming(int[][] oriMatrix)
+    public Vector<int[][]> prMatrixForming(int[][] oriMatrix)
     {
         Vector<int[][]> prMatrices = new Vector<>(oriMatrix.length);
         int i=0;
         int j=0;
         int prFlag=0;
-        int [][] matrixn=new int[oriMatrix.length][oriMatrix.length];
         for(i=0;i<oriMatrix.length;i++)
         {
-            matrixn=new int[oriMatrix.length][oriMatrix.length];
+            int[][] matrixn=new int[oriMatrix.length][oriMatrix.length];
             prFlag=0;
             for (j=0;j<oriMatrix.length;j++)
             {
@@ -155,17 +159,74 @@ public class MatrixFormingNew {
         }
         return crMatrix;
     }
+    public int[] yVectorForming(int[][] oriMatrix)
+    {
+        int[] yVector = new int[oriMatrix.length];
+        int i,j=0;
+        for(j=0;j<oriMatrix.length;j++)
+        {
+            yVector[j]=1;
+            for (i=0;i<oriMatrix.length;i++)
+            {
+                if (oriMatrix[i][j]==1)
+                {
+                    yVector[j]=0;
+                    break;
+                }
+            }
+        }
+        return yVector;
+    }
+    public int[] xpVectorForming(int[][] oriMatrix)
+    {
+        int[] xpVector= new int[oriMatrix.length];
+        int i,j=0;
+        for(i=0;i<oriMatrix.length;i++)
+        {
+            xpVector[i]=1;
+            for (j=0;j<oriMatrix.length;j++)
+            {
+                if (oriMatrix[i][j]==1)
+                {
+                    xpVector[i]=0;
+                    break;
+                }
+            }
+        }
+        return xpVector;
+    }
+    public Vector<int[]> yAllForming(Vector<int[][]> prMatrices)
+    {
+        Vector<int[]> yAll=new Vector<>(prMatrices.size()*2);
+        int i=0;
+        for(i=0;i<prMatrices.size();i++)
+        {
+            yAll.add(yVectorForming(prMatrices.get(i)));
+            yAll.add(xpVectorForming(prMatrices.get(i)));
+        }
+        return yAll;
+    }
+    public Element[] vectorEncrypt(int[] oriVector,PublicKey BGNPK)
+    {
+        Element[] encVector=new Element[oriVector.length];
+        int i=0;
+        TCBGN BGN=new TCBGN();
+        for(i=0;i<oriVector.length;i++)
+        {
+            encVector[i]=BGN.Encrypt(BGNPK,oriVector[i]);
+        }
+        return encVector;
+    }
     public static void main(String[] args){
         MatrixFormingNew MFNew=new MatrixFormingNew();
-        int[] Btm=new int[10];
-        Btm[0]=10;
-        Btm[1]=15;
-        Btm[2]=20;
-        int[] Top=new int[10];
-        Top[0]=25;
-        Top[1]=27;
-        Top[2]=30;
-
+        int[] Btm={10,15,20,0,0,0,0,0,0,0};
+        int[] Top={40,45,50,0,0,0,0,0,0,0};
+        //Top[1]=45;
+        //Top[2]=50;
+        double t1=0,t2=0,t3=0;
+        TCBGN BGN =new TCBGN();
+        PublicKey BGNPK=BGN.gen(512);
+        t1=System.currentTimeMillis();
         System.out.println(MFNew.matrixOrderCalc(Btm,Top,MFNew));
         int[][] matrix=MFNew.matrixFormingNew(MFNew);
 
@@ -180,7 +241,7 @@ public class MatrixFormingNew {
         }
         Vector<int[][]> prMatrices= MFNew.prMatrixForming(matrix);
         System.out.println("R1:");
-        for(int[] a:prMatrices.get(1))
+        for(int[] a:prMatrices.get(0))
         {
             for (int b : a) {
                 System.out.print(b + " ");
@@ -197,5 +258,12 @@ public class MatrixFormingNew {
                 }
                 System.out.println();//换行
         }
+            Vector<int[]> yAll=MFNew.yAllForming(prMatrices);
+            yAll.add(MFNew.xpVectorForming(crMatrix));
+            Element[] yAllEnc=MFNew.vectorEncrypt(yAll.get(0),BGNPK);
+            t2=System.currentTimeMillis();
+            t3=t2-t1;
+            System.out.println("Query generated. "+t3+" ms passed.");
+            //System.out.println("Single unit length:"+yAllEnc[1].getLengthInBytes());
     }
 }
